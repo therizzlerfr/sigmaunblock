@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Google Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      text-align: center;
+    }
+    .header {
+      background-color: #4285F4;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .search-container {
+      margin: 20px auto;
+      width: 80%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Custom Google Search</div>
+  <div class="search-container">
+    <!-- Google CSE Search Box -->
+    <div id="gcse-searchbox"></div>
+    <!-- Search Results -->
+    <div id="gcse-searchresults"></div>
+  </div>
+
+  <!-- Include Google CSE Scripts -->
+  <script async src="https://cse.google.com/cse.js?cx=944aaa9d02c7b436f"></script>
+</body>
+</html>
