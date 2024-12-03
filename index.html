@@ -9,32 +9,54 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
       text-align: center;
-    }
-    .header {
-      background-color: #4285F4;
-      color: white;
-      padding: 20px;
-      font-size: 24px;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .search-container {
-      margin: 20px auto;
-      width: 80%;
+      width: 90%;
       max-width: 600px;
+      background-color: #e0e0e0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .search-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .search-container button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #4285F4;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .search-container button:hover {
+      background-color: #357ae8;
+    }
+    .gcse-searchresults-only {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="header">Custom Google Search</div>
   <div class="search-container">
     <!-- Google CSE Search Box -->
-    <div id="gcse-searchbox"></div>
-    <!-- Search Results -->
-    <div id="gcse-searchresults"></div>
+    <div class="gcse-search"></div>
   </div>
 
-  <!-- Include Google CSE Scripts -->
+  <!-- Include Google CSE Script -->
   <script async src="https://cse.google.com/cse.js?cx=944aaa9d02c7b436f"></script>
 </body>
 </html>
